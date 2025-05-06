@@ -21,3 +21,21 @@ object WordCount {
     wordCounts
   }
 }
+
+object NumberSignChecker {
+  def main(args: Array[String]): Unit = {
+
+    // Reading input from the user
+    println("Enter a number: ")
+    val number = scala.io.StdIn.readInt()
+
+    // Checking if the number is positive, negative or zero
+    if (number > 0) {
+      println(s"$number is Positive")
+    } else if (number < 0) {
+      println(s"$number is Negative")
+    } else {
+      println(s"$number is Zero")
+    }
+  }
+}
